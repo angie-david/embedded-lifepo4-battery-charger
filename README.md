@@ -1,79 +1,54 @@
 # Embedded LiFePO₄ Battery Charging Controller
-Embedded STM32-based CC-CV LiFePO4 battery charger using a synchronous buck converter with MATLAB optimization, LTspice simulation, and custom PCB design.
 
 ## Overview
 
-This project investigates the design and implementation of an embedded LiFePO4 battery charging controller using an STM32 microcontroller and a synchronous buck converter. The objective is to develop a custom constant-current/constant-voltage (CC-CV) charging system while gaining practical experience in power electronics, embedded systems, and PCB design.
-
-The project is being developed as part of undergraduate research at UC San Diego.
+This project focuses on the design and implementation of an embedded LiFePO₄ battery charging controller using an STM32 microcontroller and a synchronous buck converter. The charger implements a Constant Current / Constant Voltage (CC-CV) charging algorithm and is being developed through analytical modeling, simulation, PCB design, and embedded firmware implementation.
 
 ---
 
-## Objectives
+# Design Specifications
 
-- Design a synchronous buck converter for LiFePO4 battery charging
-- Implement a digital CC-CV charging algorithm on an STM32 microcontroller
-- Optimize converter specifications using MATLAB parameter sweeps
-- Verify converter operation using LTspice simulations
-- Design and fabricate a custom PCB
-- Validate charging performance through hardware testing
-
----
-
-## Current Progress
-
-✔ Studied LiFePO4 CC-CV charging methodology
-
-✔ Analyzed the LT3741 battery charger architecture
-
-✔ Defined preliminary system architecture
-
-✔ Selected STM32 as the embedded controller
-
-✔ Selected synchronous buck converter topology
-
-✔ Established initial design specifications
-
-- Input voltage: 18–60 V (design space)
-- Output voltage: 14.6 V
-- Switching frequency: 100 kHz
-- Operation mode: CCM
-
-🚧 Current Work
-
-- MATLAB design-space optimization
-- Converter component calculations
-- Inductor and capacitor selection
+| Parameter | Specification |
+|-----------|---------------|
+| Battery Chemistry | LiFePO₄ |
+| Battery Charge Voltage | 14.6 V |
+| Converter Topology | Synchronous Buck |
+| Controller | STM32 |
+| Charging Algorithm | CC-CV |
+| Switching Frequency | 100 kHz |
+| Input Voltage | Design Variable (18–60 V) |
+| Operating Mode | CCM |
 
 ---
 
-## Planned Workflow
+# Design Methodology
 
-```
-Design Specifications
-        │
-        ▼
-MATLAB Design Space Sweep
-        │
-        ▼
-Component Selection
-        │
-        ▼
-LTspice Verification
-        │
-        ▼
-PCB Design
-        │
-        ▼
-STM32 Firmware
-        │
-        ▼
-Hardware Validation
-```
+1. Design specification selection
+2. MATLAB design-space optimization
+3. Component selection
+4. LTspice verification
+5. PCB design
+6. STM32 firmware implementation
+7. Hardware validation
 
 ---
 
-## Repository Structure
+# Current Results
+
+| Category | Result |
+|----------|--------|
+| Topology | Synchronous Buck Converter |
+| Controller | STM32 |
+| Switching Frequency | 100 kHz |
+| Battery Voltage | 14.6 V |
+| Operating Mode | CCM |
+| Input Voltage | Under optimization (18–60 V) |
+| MATLAB Design Space Sweep | In Progress |
+| Component Selection | In Progress |
+
+---
+
+# Repository Structure
 
 ```
 docs/
@@ -87,15 +62,8 @@ images/
 
 ---
 
-## Software
+# Software
 
 - MATLAB
 - LTspice
 - STM32CubeIDE
-- Git & GitHub
-
----
-
-## Project Status
-
-🟢 Active Development (Summer 2026)
